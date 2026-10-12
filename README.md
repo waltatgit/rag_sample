@@ -25,6 +25,7 @@ How It Works
 Architecture
 
 Documents
+```
 (PDF/DOCX/PPTX)
         |
         v
@@ -47,6 +48,7 @@ GPT-4o-mini
         |
         v
 Answer
+```
 
 Installation
 
