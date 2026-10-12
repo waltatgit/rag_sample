@@ -1,0 +1,8 @@
+faiss-cpu
+pypdf
+python-docx
+python-pptx
+tiktoken
+llama-index
+llama-index-llms-openai
+llama-index-embeddings-openai
