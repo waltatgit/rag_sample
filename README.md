@@ -94,21 +94,15 @@ Question: Which document mentions budget overruns?
 Exit:
 
 exit
-Dependencies
-faiss-cpu
-pypdf
-python-docx
-python-pptx
-tiktoken
-llama-index
-llama-index-llms-openai
-llama-index-embeddings-openai
+
+
 Suggested Improvements
-Persist the index to disk.
-Add source citations to answers.
-Use CitationQueryEngine.
-Add support for Ollama.
-Use ChromaDB or Qdrant for larger datasets.
+
+* Persist the index to disk.
+* Add source citations to answers.
+* Use CitationQueryEngine.
+* Add support for MChat.
+* Use ChromaDB or Qdrant for larger datasets.
 Build a FastAPI or Streamlit interface.
 License
 Use and modify as needed for your organization.
