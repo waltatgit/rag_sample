@@ -1,0 +1,63 @@
+2026-10-13 11:05:00,753 - study_assessor - ERROR - Execution Error: Criteria file not found: data/criteria.txt
+Traceback (most recent call last):
+  File "/Users/waltmelo/rag_sample/src/study_assessor_v3/app.py", line 74, in main
+    criteria = parse_criteria_file(criteria_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/waltmelo/rag_sample/src/study_assessor_v3/modules/utils.py", line 27, in parse_criteria_file
+    raise FileNotFoundError(f"Criteria file not found: {filepath}")
+FileNotFoundError: Criteria file not found: data/criteria.txt
+2026-10-13 11:09:43,349 - study_assessor - INFO - Loaded document: SysCon2027.pdf for Study 1
+2026-10-13 11:09:43,392 - study_assessor - INFO - Loaded document: SysCon2027.pdf for Study 2
+2026-10-13 11:09:43,437 - study_assessor - INFO - Loading existing persisted index from storage/study1
+2026-10-13 11:09:43,482 - llama_index.core.indices.loading - INFO - Loading all indices.
+2026-10-13 11:09:43,657 - study_assessor - INFO - Loading existing persisted index from storage/study2
+2026-10-13 11:09:43,701 - llama_index.core.indices.loading - INFO - Loading all indices.
+2026-10-13 11:09:44,985 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:09:44,992 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'Clarity – How well does the au...'
+2026-10-13 11:09:45,803 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:09:45,807 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'Clarity – How well does the au...'
+2026-10-13 11:09:50,103 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:09:54,098 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:09:55,734 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:09:56,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:09:56,117 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'does not communicate ideas wel...'
+2026-10-13 11:09:56,969 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:09:56,973 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'does not communicate ideas wel...'
+2026-10-13 11:10:01,468 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:04,643 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:06,588 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:07,068 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:07,166 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'possibly even a poor grasp of ...'
+2026-10-13 11:10:08,021 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:08,026 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'possibly even a poor grasp of ...'
+2026-10-13 11:10:11,551 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:16,215 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:17,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:18,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:18,624 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'the reduced score is simply th...'
+2026-10-13 11:10:18,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:18,935 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'the reduced score is simply th...'
+2026-10-13 11:10:21,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:23,587 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:24,919 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:25,410 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:25,503 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'of a proofreader or editor, we...'
+2026-10-13 11:10:25,944 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:25,949 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'of a proofreader or editor, we...'
+2026-10-13 11:10:30,140 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:32,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:33,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:34,444 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:34,450 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'Technical Content – Does the r...'
+2026-10-13 11:10:34,748 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:34,753 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'Technical Content – Does the r...'
+2026-10-13 11:10:38,231 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:41,318 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:42,735 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:43,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:43,359 - study_assessor - INFO - Retrieved 5 passages for 'Study 1' on criterion: 'the material presented new and...'
+2026-10-13 11:10:43,646 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-13 11:10:43,650 - study_assessor - INFO - Retrieved 5 passages for 'Study 2' on criterion: 'the material presented new and...'
+2026-10-13 11:10:47,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:50,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-13 11:10:52,370 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

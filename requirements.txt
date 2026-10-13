@@ -6,3 +6,8 @@ tiktoken
 llama-index
 llama-index-llms-openai
 llama-index-embeddings-openai
+pandas
+streamlit
+plotly
+PyMuPDF
+openpyxl
