@@ -6,11 +6,12 @@ This project provides a Retrieval-Augmented Generation (RAG) solution that allow
 The implementation indexes documents using LlamaIndex, generates embeddings with OpenAI, and uses an OpenAI chat model to answer questions based on retrieved content.
 
 Files
-ask_questions_about_reports.py - Main application that loads documents, builds the index, and answers questions.
 
-requirements.txt - Python dependencies.
+```ask_questions_about_reports.py``` - Main application that loads documents, builds the index, and answers questions.
 
-documents/ - Folder containing PDF, DOCX, and PPTX files.
+```requirements.txt`` - Python dependencies.
+
+```documents/``` - Folder containing PDF, DOCX, and PPTX files.
 
 How It Works
 
