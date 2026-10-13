@@ -9,7 +9,7 @@ Files
 
 ```ask_questions_about_reports.py``` - Main application that loads documents, builds the index, and answers questions.
 
-```requirements.txt`` - Python dependencies.
+```requirements.txt``` - Python dependencies.
 
 ```documents/``` - Folder containing PDF, DOCX, and PPTX files.
 
