@@ -1,11 +1,12 @@
-Document RAG Solution with LlamaIndex
-Overview
+# Document RAG Solution with LlamaIndex
+
+## Overview
 
 This project provides a Retrieval-Augmented Generation (RAG) solution that allows users to ask questions across a collection of PDF, DOCX, and PPTX documents.
 
 The implementation indexes documents using LlamaIndex, generates embeddings with OpenAI, and uses an OpenAI chat model to answer questions based on retrieved content.
 
-Files
+## Files
 
 ```ask_questions_about_reports.py``` - Main application that loads documents, builds the index, and answers questions.
 
@@ -13,7 +14,7 @@ Files
 
 ```documents/``` - Folder containing PDF, DOCX, and PPTX files.
 
-How It Works
+## How It Works
 
 * Load documents from the documents directory.
 * Extract text from PDF, DOCX, and PPTX files.
@@ -23,9 +24,8 @@ How It Works
 * Retrieve relevant document chunks.
 * Generate answers using gpt-4o-mini.
 
-Architecture
+## Architecture
 
-Documents
 ```
 (PDF/DOCX/PPTX)
         |
@@ -51,54 +51,55 @@ GPT-4o-mini
 Answer
 ```
 
-Installation
+## Installation
 
-Create a virtual environment:
+### Create a virtual environment:
 
 ```
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies:
+### Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
-Configure OpenAI
-Set your API key:
+
+### Configure OpenAI
 
 ```
 export OPENAI_API_KEY=your-api-key
 ```
 
 
-Place documents in:
+### Place documents in:
 
 documents/
 
-Run:
+## Run:
 
 ```
 python src/ask_questions_about_reports.py
 ```
-Example:
+
+## Example:
 
 Question: What are the key project risks?
+
 Question: Summarize the customer requirements.
+
 Question: Which document mentions budget overruns?
-Exit:
 
-exit
+Question: exit
 
 
-Suggested Improvements
+## Suggested Improvements
 
 * Persist the index to disk.
 * Add source citations to answers.
 * Use CitationQueryEngine.
 * Add support for MChat.
 * Use ChromaDB or Qdrant for larger datasets.
-Build a FastAPI or Streamlit interface.
-License
-Use and modify as needed for your organization.
+* Build a FastAPI or Streamlit interface.
+
