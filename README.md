@@ -72,11 +72,6 @@ Set your API key:
 export OPENAI_API_KEY=your-api-key
 ```
 
-Windows:
-
-```
-set OPENAI_API_KEY=your-api-key
-```
 
 Place documents in:
 
